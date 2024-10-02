@@ -24,7 +24,7 @@ class PostDetail(DetailView):
 #     post = Post.objects.get(pk=pk)
 #     return render(
 #         request,
-#         'blog/post_detaul.html',
+#         'blog/post_detail.html',
 #         {
 #             'post': post,
 #         }
