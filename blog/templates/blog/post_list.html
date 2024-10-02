@@ -21,7 +21,7 @@
                         <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./blog_list.html">Blog</a>
+                        <a class="nav-link" href="./post_list.html">Blog</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./about_me.html">About me</a>
@@ -85,7 +85,7 @@
                 {% for p in post_list %}
                 <!-- Blog Post -->
                 <div class="card mb-4">
-                    <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
+                    <img class="card-img-top" src="{{ p.head_image.url }}" alt="{{ p.title }}">
                     <div class="card-body">
                     <h2 class="card-title">{{ p.title }}</h2>
                     <p class="card-text">{{ p.content }}</p>
